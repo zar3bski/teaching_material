@@ -7,7 +7,7 @@
 
 ## Description des données
 
-Les données de ce TP sont tirés de [ce dataset Kaggle](https://www.kaggle.com/citylines/city-lines#cities.csv). Vous les retrouverez dans ce répos en `/data/city-lines.zip`. Le dataset se compose de 7 csv. N'hésitez pas à consulter la page ppour plus de détails. 
+Les données de ce TP sont tirées de [ce dataset Kaggle](https://www.kaggle.com/citylines/city-lines#cities.csv). Vous les retrouverez dans ce répos en `/data/city-lines.zip`. Le dataset se compose de 7 csv. N'hésitez pas à consulter la page ppour plus de détails. 
 
 ## Assignment
 
