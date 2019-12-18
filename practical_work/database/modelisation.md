@@ -82,7 +82,7 @@ Chaque facture est donc liée à un contrat et doit comporter les informations s
 
 Les rapports d'activité remplis par les consultants le sont par le biais d'une appliction web unique et commune à tout **Und3** accessible depuis internet. Vous veillerez donc à créer le(s) rôle(s) nécessaires à l'implémentation de ce service sans possible mise en danger des données clients, comptables, etc etc. 
 
-L'édition des factures se fait par le biais d'une application sécurisée accessible aux seuls profils fonctionels par l'intranet. Vous pouvez considérer celle-ci comme sûr.
+L'édition des factures se fait par le biais d'une application sécurisée accessible aux seuls profils fonctionels par l'intranet. Vous pouvez considérer celle-ci comme sûre.
 
 ### Aspects humains
 
