@@ -26,7 +26,7 @@ Chaque agence:
 * se situe à une adresse
 * est rattachée à une région et une seule
 
-Plusieurs agences peuvent se partager une même région. Cependant, lorsque cela est le cas, une et une seule agence est alors considérée comme l'**agence principale**. Ce découpage en region est, pour des raisons comptables et fiscales, primordial.
+Plusieurs agences peuvent se partager une même région. Cependant, lorsque cela est le cas, une et une seule agence est alors considérée comme l'**agence principale**. Ce découpage en region est, pour des raisons comptables, fiscales et sécuritaires, primordial.
 
 ### Organisation de la masse salariale
 
@@ -46,8 +46,8 @@ A **Und3**, il y a trois types *disjoints* d'employés:
 Tout consultant est tenu de tenir à jour son **rapport d'activité**. Celui-ci indique, pour chaque journée de jour de travail à quoi cette dernière a été consacrée. Il existe trois types d'activités possible
 
 * **absence**: le consultant a pris un jour de RTT, est malade, en congé, *etc*
-* sur site: le consultant se trouve dans l'une des agences **Und3** et travaille sur un sujet interne
-* en mission chez le client: dans ce cas, la journée doit être liée à un **contrat** en cours de validité
+* **sur site**: le consultant se trouve dans l'une des agences **Und3** et travaille sur un sujet interne
+* **en mission chez le client**: dans ce cas, la journée doit être liée à un **contrat** en cours de validité
 
 Un directeur d'agence ou manager doit pouvoir être en mesure de récupérer aisément les activités des consultants de leur agence.
 
@@ -61,7 +61,7 @@ Un **contrat** est un acte liant une agence à un client sur une période déter
 * date de fin
 * taux journalier (a.k.a *tjm*)
 
-Ils sont typiquement générés/édités par les commerciaux. La **facturation**, assurée par les comptables ou directeurs d'agences (en l'absence de comptable pour les plus petites agences) est effectuée à la fin de chaque mois sur la base:
+Ils sont typiquement générés/édités par les commerciaux. La **facturation**, assurée par les comptables ou directeurs d'agences (en l'absence de comptable pour les plus petites agences), est effectuée à la fin de chaque mois sur la base:
  
 * des contrats (tjm)
 * de la présence sur site des consultants engagés pas les contrats
@@ -86,12 +86,21 @@ L'édition des factures se fait par le biais d'une application sécurisée acces
 
 ### Aspects humains
 
-Le pire scenario à éviter est celui d'un commercial qui partirait avec l'ensemble des données clients. Pour cette raison, la direction a décidé de restreindre l'accès des commerciaux aux clients de leurs agences respectives. 
+Le pire scenario à éviter est celui d'un commercial qui partirait avec l'ensemble des données clients. Pour cette raison, la direction a décidé de restreindre l'accès des commerciaux aux clients de leurs agences respectives et l'accès des comptables à ceux de leurs régions. 
 
-Pour éviter que les agences ne se concurrencent entre elles, les *directeurs* et *managers* doivent avoir accès à l'ensemble des clients qu'ils pourront alors lier à leurs agences respectives. 
+Pour éviter que les agences ne se concurrencent entre elles, les *directeurs* et *managers* doivent avoir accès à l'ensemble des clients qu'ils pourront alors lier à leurs agences respectives afin que commerciaux et comptables puissent prendre le pas.
 
 Les consultants n'ont pas besoin d'accéder au données clients ni à celles de l'ensemble des employés.
 
+
+## Remarques diverses
+
+* un client peut tout à fait travailler avec plusieurs agences
+* une agence peut tout à fait travailler avec un client d'une région lointaine
+* les factures sont succeptible d'être acquitées en plusieurs fois
+* la distinction des jours ouvrés VS jours fériés, WE est assurée par l'application. Ne vous ambêtez pas trop avec cela.
+* l'utilsation de schemas peut vous aider à encapsuler les différents privilèges. Un découpage par région est un bon candidat mais pas nécessairement le seul possible
+* contrats et factures ne peuvent disparaitre (sauf par l'action bien sûr du super administrateur de la base: rôle détenu par la direction)
 
 ## rendu attendu
 
