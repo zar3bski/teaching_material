@@ -23,6 +23,7 @@ Un même client peut travailler avec une ou plusieurs agences du groupe.
 Chaque agence: 
 
 * a un directeur
+* possède un identifiant unique (nom ou id numérique)
 * se situe à une adresse
 * est rattachée à une région et une seule
 
@@ -90,6 +91,8 @@ Le pire scenario à éviter est celui d'un commercial qui partirait avec l'ensem
 
 Pour éviter que les agences ne se concurrencent entre elles, les *directeurs* et *managers* doivent avoir accès à l'ensemble des clients qu'ils pourront alors lier à leurs agences respectives afin que commerciaux et comptables puissent prendre le pas.
 
+Seuls les directeurs et managers peuvent ajouter / éditer les informations des employés de leurs agences
+
 Les consultants n'ont pas besoin d'accéder au données clients ni à celles de l'ensemble des employés.
 
 
@@ -101,6 +104,7 @@ Les consultants n'ont pas besoin d'accéder au données clients ni à celles de 
 * la distinction des jours ouvrés VS jours fériés, WE est assurée par l'application. Ne vous ambêtez pas trop avec cela.
 * l'utilsation de schemas peut vous aider à encapsuler les différents privilèges. Un découpage par région est un bon candidat mais pas nécessairement le seul possible
 * contrats et factures ne peuvent disparaitre (sauf par l'action bien sûr du super administrateur de la base: rôle détenu par la direction)
+* un employé peut être muté d'une agence à l'autre
 
 ## rendu attendu
 
